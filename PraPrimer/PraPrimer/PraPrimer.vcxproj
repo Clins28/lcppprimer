@@ -116,8 +116,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\code\src\bookstore.cpp" />
+    <ClCompile Include="..\..\code\src\Sales_data.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\code\h\Person.h" />
     <ClInclude Include="..\..\code\h\Sales_data.h" />
     <ClInclude Include="..\..\code\h\Sales_item.h" />
   </ItemGroup>
