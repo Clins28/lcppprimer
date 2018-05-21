@@ -1,13 +1,13 @@
 #pragma once
 #include <iostream>
-#include <string.h>
+#include <string>
 #ifndef SALESDATA_H
 #define SALESDATA_H
 using namespace std;
 
 class Sales_data
 {
-private:
+public:
 	string bookNo = "";
 	unsigned int units_sold = 0;
 	double revenue = 0.0;

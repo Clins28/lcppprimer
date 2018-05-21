@@ -1,5 +1,6 @@
 #include <iostream>
 #include "..\h\Sales_data.h"
+#include <string>
 
 using namespace std;
 
@@ -19,11 +20,11 @@ int main()
 			else
 			{
 				//打印前一本书的结果
-				cout << total << endl;
+				print(cout, total) << endl;
 				total = trans;	//total现在表示下一本书的销售额
 			}
 		}
-		cout << total << endl;	//打印最后一本书的结果
+		print(cout, total) << endl;	//打印最后一本书的结果
 	}
 	else
 	{
