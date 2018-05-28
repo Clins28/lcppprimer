@@ -1,6 +1,4 @@
 #include "../h/Sales_data.h"
-#include <iostream>
-#include <string>
 
 using namespace std;
 

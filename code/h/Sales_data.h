@@ -1,8 +1,8 @@
 #pragma once
-#include <iostream>
-#include <string>
 #ifndef SALESDATA_H
 #define SALESDATA_H
+#include <iostream>
+#include <string>
 using namespace std;
 
 class Sales_data
@@ -21,7 +21,7 @@ public:
 
 // Sales_data的非成员接口函数
 Sales_data add(const Sales_data&, const Sales_data&);
-ostream &print(ostream&, const Sales_data);
+ostream &print(ostream&, const Sales_data&);
 istream &read(istream&, Sales_data&);
 
 

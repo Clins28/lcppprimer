@@ -1,6 +1,4 @@
-#include <iostream>
-#include "..\h\Sales_data.h"
-#include <string>
+#include "../h/Sales_data.h"
 
 using namespace std;
 
