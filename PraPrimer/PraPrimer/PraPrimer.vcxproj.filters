@@ -21,11 +21,11 @@
     <ClCompile Include="..\..\code\src\Sales_data.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\code\src\Person.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\code\h\Sales_item.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\code\h\Sales_data.h">
       <Filter>头文件</Filter>
     </ClInclude>

@@ -8,15 +8,27 @@ using namespace std;
 class Sales_data
 {
 public:
+	//构造函数
+	Sales_data() = default;
+	Sales_data(const std::string &s):bookNo(s){}
+	Sales_data(std::istream &);
+	Sales_data(const std::string &s, unsigned n, double p);
+	string isbn() const { return bookNo; }			//https://www.cnblogs.com/thefirstfeeling/p/5848593.html
+	Sales_data& combine(const Sales_data& rhs);		//const引用
+
+private:
 	string bookNo = "";
 	unsigned int units_sold = 0;
 	double revenue = 0.0;
+	double avg_price() const
+	{
+		return units_sold ? revenue / units_sold : 0; 
+	}
 
-public:
-	string isbn() const { return bookNo; }			//https://www.cnblogs.com/thefirstfeeling/p/5848593.html
-	Sales_data& combine(const Sales_data& rhs);		//const引用
-	double avg_price() const;
-
+	//友元声明
+	friend Sales_data add(const Sales_data&, const Sales_data&);
+	friend ostream &print(ostream&, const Sales_data&);
+	friend istream &read(istream&, Sales_data&);
 };
 
 // Sales_data的非成员接口函数

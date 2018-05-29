@@ -4,10 +4,12 @@ using namespace std;
 
 int main()
 {
+	Sales_data first("0024863", 6, 14.9);
 	Sales_data total; //保存下一条交易记录的变量
 	//读入第一条交易记录，并确保有数据可以处理
 	if (read(cin, total))
 	{
+		print(cout, first) << endl;
 		Sales_data trans;	//保存和的变量
 		//读入并处理剩余交易记录
 		while(read(cin, trans))
