@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main()
+int bookmain()
 {
 	Sales_data first("0024863", 6, 14.9);
 	Sales_data total; //保存下一条交易记录的变量

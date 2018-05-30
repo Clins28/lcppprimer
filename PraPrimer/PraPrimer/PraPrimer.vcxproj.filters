@@ -24,12 +24,21 @@
     <ClCompile Include="..\..\code\src\Person.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\code\src\Screen.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\src\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\h\Sales_data.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\h\Person.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\h\Screen.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

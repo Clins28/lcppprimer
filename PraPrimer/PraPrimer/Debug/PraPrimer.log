@@ -1,2 +1,4 @@
-﻿  Person.cpp
-  PraPrimer.vcxproj -> G:\C++ Primer\PraPrimer\Debug\PraPrimer.exe
+﻿  main.cpp
+main.obj : error LNK2019: 无法解析的外部符号 "public: class Screen & __thiscall Screen::move(unsigned int,unsigned int)" (?move@Screen@@QAEAAV1@II@Z)，该符号在函数 _main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 "public: class Screen & __thiscall Screen::set(char)" (?set@Screen@@QAEAAV1@D@Z)，该符号在函数 _main 中被引用
+G:\C++ Primer\PraPrimer\Debug\PraPrimer.exe : fatal error LNK1120: 2 个无法解析的外部命令

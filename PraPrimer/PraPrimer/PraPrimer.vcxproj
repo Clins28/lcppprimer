@@ -116,12 +116,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\code\src\bookstore.cpp" />
+    <ClCompile Include="..\..\code\src\main.cpp" />
     <ClCompile Include="..\..\code\src\Person.cpp" />
     <ClCompile Include="..\..\code\src\Sales_data.cpp" />
+    <ClCompile Include="..\..\code\src\Screen.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\h\Person.h" />
     <ClInclude Include="..\..\code\h\Sales_data.h" />
+    <ClInclude Include="..\..\code\h\Screen.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
