@@ -51,3 +51,19 @@ private:
 	std::vector<Screen> screens{ Screen(24, 80, ' ') };	//vector的列表初始化
 };
 
+
+Screen &Screen::set(char c) {
+	contents[cursor] = c;
+	return *this;
+}
+
+Screen &Screen::set(pos r, pos col, char ch) {
+	contents[r*width + col] = ch;
+	return *this;
+}
+
+Screen &Screen::move(pos r, pos c) {
+	pos row = r * width;	//计算行的位置
+	cursor = row + c;		//在行内将光标移动到指定的列
+	return *this;
+}
