@@ -1,5 +1,6 @@
 #include "../h/Screen.h"
 
+using namespace std;
 inline Screen &Screen::move(pos r, pos c) {
 	pos row = r * width;	//计算行的位置
 	cursor = row + c;		//在行内将光标移动到指定的列
@@ -23,4 +24,9 @@ inline Screen &Screen::set(char c) {
 inline Screen &Screen::set(pos r, pos col, char ch) {
 	contents[r*width + col] = ch;
 	return *this;
+}
+
+void Window_mgr::clear(ScreenIndex i) {
+	Screen &s = screens[i];
+	s.contents = string(s.height * s.width, ' ');
 }
