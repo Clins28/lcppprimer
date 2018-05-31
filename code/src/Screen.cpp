@@ -1,7 +1,7 @@
 #include "../h/Screen.h"
 
 using namespace std;
-inline Screen &Screen::move(pos r, pos c) {
+Screen &Screen::move(pos r, pos c) {
 	pos row = r * width;	//计算行的位置
 	cursor = row + c;		//在行内将光标移动到指定的列
 	return *this;
@@ -16,12 +16,12 @@ void Screen::some_member() const {		//即使在const成员函数内部也可以改变mutable的
 	//todo
 }
 
-inline Screen &Screen::set(char c) {
+Screen &Screen::set(char c) {
 	contents[cursor] = c;
 	return *this;
 }
 
-inline Screen &Screen::set(pos r, pos col, char ch) {
+Screen &Screen::set(pos r, pos col, char ch) {
 	contents[r*width + col] = ch;
 	return *this;
 }

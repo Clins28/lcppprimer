@@ -16,10 +16,10 @@ public:
 	
 	char get() const { return contents[cursor]; }	//读取光标处字符，隐式内联
 	inline char get(pos, pos) const;			//显式内联
-	Screen &move(pos, pos);						//在之后被设为内联
+	inline Screen &move(pos, pos);						//在之后被设为内联
 
-	Screen &set(char);
-	Screen &set(pos, pos, char);
+	inline Screen &set(char);
+	inline Screen &set(pos, pos, char);
 
 	Screen &display(std::ostream &os) { do_display(os); return *this; }
 	const Screen &display(std::ostream &os) const { do_display(os); return *this; }
