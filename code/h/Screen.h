@@ -6,16 +6,6 @@
 #include <vector>
 #include <iostream>
 
-class Window_mgr {
-public:
-	using ScreenIndex = std::vector<Screen>::size_type;
-	void clear(ScreenIndex);
-private:
-	//这个Window_mgr追踪的Screen
-	//默认情况下，一个Window_mgr包含一个标准尺寸的空白Screen
-	std::vector<Screen> screens{ Screen(24, 80, ' ') };	//vector的列表初始化
-};
-
 
 class Screen {
 public:
@@ -50,4 +40,14 @@ private:
 
 #endif // !SCREEN_H
 
+class Window_mgr {
+public:
+	using ScreenIndex = std::vector<Screen>::size_type;
+	void clear(ScreenIndex);
+	ScreenIndex addScreen(const Screen&);
+private:
+	//这个Window_mgr追踪的Screen
+	//默认情况下，一个Window_mgr包含一个标准尺寸的空白Screen
+	std::vector<Screen> screens{ Screen(24, 80, ' ') };	//vector的列表初始化
+};
 
