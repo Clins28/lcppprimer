@@ -9,13 +9,15 @@ class Sales_data
 {
 public:
 	//构造函数
-	Sales_data() = default;
-	Sales_data(const std::string &s):bookNo(s){}
+	//Sales_data(std::string s) : bookNo(s){}
+	Sales_data(std::string s = ""):bookNo(s){}		//如果一个构造函数为所有参数都提供了默认实参，则他实际上也定义了默认构造函数
+	Sales_data(const std::string &s, unsigned n, double price):bookNo(s), units_sold(n), revenue(n*price){}
 	Sales_data(std::istream &);
-	Sales_data(const std::string &s, unsigned n, double p);
 	string isbn() const { return bookNo; }			//https://www.cnblogs.com/thefirstfeeling/p/5848593.html
 	Sales_data& combine(const Sales_data& rhs);		//const引用
 
+	//委托构造函数
+	Sales_data() : Sales_data("", 0, 0){}
 private:
 	string bookNo = "";
 	unsigned int units_sold = 0;

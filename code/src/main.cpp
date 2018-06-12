@@ -1,12 +1,12 @@
 #include "../h/Screen.h"
+#include "../h/Sales_data.h"
 
 using namespace std;
 
+
 int main() {
-	Screen myScreen(5, 5, 'X');
-	myScreen.move(4, 0).set('#').display(cout);
-	cout << "\n";
-	myScreen.display(cout);
-	cout << "\n";
-	system("pause");
+	string s = "7562";
+	Sales_data A("2345");
+	Sales_data B("5679");
+	B.combine(s);
 }

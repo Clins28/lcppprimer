@@ -15,13 +15,6 @@ Sales_data::Sales_data(std::istream &is)
 	read(is, *this);
 }
 
-Sales_data::Sales_data(const std::string &s, unsigned n, double p)
-{
-	this->bookNo = s;
-	this->units_sold = n;
-	this->revenue = n * p;
-
-}
 
 istream &read(istream &is, Sales_data &item) 
 {
