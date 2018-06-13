@@ -1,6 +1,5 @@
+#include "../h/Screen.h"
 #include "../h/debug.h"
-#include "../h/account.h"
-#include <iostream>
 
 using namespace std;
 
