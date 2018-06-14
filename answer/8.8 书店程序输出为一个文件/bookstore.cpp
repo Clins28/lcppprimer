@@ -3,7 +3,7 @@
 using namespace std;
 
 
-int bookmain(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	ifstream input("../../data/bookstoredata.txt");
 	ofstream output("../../data/boutput.txt", ofstream::app);

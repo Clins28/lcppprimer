@@ -3,10 +3,9 @@
 using namespace std;
 
 
-int bookmain(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	ifstream input("../../data/bookstoredata.txt");
-	ofstream output("../../data/boutput.txt", ofstream::app);
 	Sales_data total; //保存下一条交易记录的变量
 	//读入第一条交易记录，并确保有数据可以处理
 	if (read(input, total))
@@ -21,13 +20,11 @@ int bookmain(int argc, char *argv[])
 			else
 			{
 				//打印前一本书的结果
-				print(output, total) << endl;
 				print(cout, total) << endl;
 				total = trans;	//total现在表示下一本书的销售额
 			}
 		}
-		print(output, total) << endl;	//打印最后一本书的结果
-		print(cout, total) << endl;
+		print(cout, total) << endl;	//打印最后一本书的结果
 	}
 	else
 	{
