@@ -13,7 +13,7 @@
 * open close函数
 ## 2.2. 自动构造与析构
 ## 2.3. 文件模式
-<img src="pics/_1528967396_24232.jpg" width=50% height=50% /><br>
+<img src="pics/文件模式.jpg" width=50% height=50% /><br>
 
 ```cpp
 ofstream out("file1", ofstream::app);
